@@ -1,36 +1,94 @@
-.homePage{
-    background-color:$whiteColor;
-    width: 100%;
-    height: auto;
+.homePage {
+  background-color: $whiteColor;
+  width: 100%;
 }
 
-.homePage header{
- width: 100%;
- height: auto;
- min-height: 100vh;
- background-color: $greenBgColor;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- .mainDiv{
+.homePage header {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: $greenBgColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  position: relative;
+  z-index: 5;
+
+  .mainDiv {
     width: 100%;
     height: 100%;
     text-align: center;
- }
- h1{
-    font-size: clamp(8vh , 20vw , 30vh);
+  }
+  h1 {
+    font-size: clamp(8vh, 20vw, 30vh);
     color: $whiteColor;
     text-transform: uppercase;
     font-family: $BebasFamily;
     letter-spacing: 10px;
-    &:nth-child(3){
-        margin-top: -150px;
+    &:nth-child(3) {
+      margin-top: -150px;
     }
-}
-img{
-    width: min(400px , 100%);
+  }
+  img {
+    width: min(400px, 100%);
     margin-top: -120px;
+  }
 
+  // ---logoSlider--
+  .logoSlider {
+    width: 100%;
+    padding: 2rem 0;
+    .swiper-wrapper {
+      transition-timing-function: linear;
+      margin: 3rem 0;
+    }
+    .logo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: auto;
+        height: 80px;
+        margin: auto;
+      }
+    }
+  }
 }
+
+// --secondSection--
+.homePage .secondSection {
+  width: 100%;
+  padding: 0 5%;
+  background-color: $pinkColor;
+  position: relative;
+  z-index: 5;
+  ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 85%;
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+    background-image: url("./images/pinkwave.png");
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+  }
+}
+
+// --thiredSection--
+.homePage .thiredSection {
+  width: 100%;
+  padding: 0 5%;
+  background-color: $whiteColor;
+  position: sticky;
+  bottom: 0px;
+  z-index: 4;
+  .twoColumnLayout {
+    flex-direction: row-reverse;
+  }
 }

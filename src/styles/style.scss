@@ -1,7 +1,11 @@
-@import './base/base' ;
-@import './abstracts/colors';
-@import './abstracts/fontSizes';
-@import './pages/homePage'
+@import "./base/base";
+@import "./abstracts/colors";
+@import "./abstracts/fontSizes";
+@import "./layout/swiper";
+// --components--
+@import "./components/twoColumLayout";
+// --pages--
+@import "./pages/homePage";
 
 // ---read me for css---
 // size pera meter - rem / px
