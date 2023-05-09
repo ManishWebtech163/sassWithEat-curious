@@ -5,6 +5,7 @@ import ThiredSection from './thiredSection/ThiredSection'
 import ForthSection from './forthSection/ForthSection'
 import FifthSection from './fifthSection/FifthSection'
 import Benefits from './benefits_sixthSection/Benefits'
+import SeventhSection from './seventhSection/SeventhSection'
 export default function Home() {
     return (
         <section className="homePage">
@@ -14,6 +15,7 @@ export default function Home() {
             <ForthSection />
             <FifthSection />
             <Benefits />
+            <SeventhSection />
         </section>
     )
 }

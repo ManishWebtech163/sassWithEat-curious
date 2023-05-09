@@ -179,4 +179,24 @@
   }
 }
 
-// ---responsive---
+// ---seventhSection---
+.homePage .seventhSection {
+  width: 100%;
+  background-color: $greenBgColor;
+  position: relative;
+  top: 3;
+  padding: 2rem 0;
+  .content {
+    // --
+    .bigTextImg {
+      display: flex;
+      justify-content: center;
+      svg {
+        width: min(1400px, 100%);
+      }
+    }
+    // --
+    .cardsContent {
+    }
+  }
+}
