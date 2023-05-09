@@ -33,6 +33,9 @@ export default function SeventhSection() {
                         <div className="heading">
                             <p>Curious Fillets</p>
                         </div>
+                        <div className="images">
+                            <LazyLoadImage src="./images/roastImg1.png" />
+                        </div>
                     </div>
                 </div>
             </div>
