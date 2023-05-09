@@ -15,8 +15,8 @@ export default function HeaderSection() {
         show: {
             opacity: 1,
             transition: {
-                delayChildren: 0.5,
-                duration: 1
+                duration: 1,
+                staggerChildren: 0.5
             }
         }
     }

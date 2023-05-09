@@ -92,3 +92,91 @@
     flex-direction: row-reverse;
   }
 }
+
+// --forthSection--
+.homePage .forthSection {
+  width: 100%;
+  padding: 0 5%;
+  background-color: $lightgreen;
+  position: sticky;
+  bottom: 0px;
+  z-index: 3;
+}
+
+// --fifthSection--
+.homePage .fifthSection {
+  width: 100%;
+  padding: 0 5%;
+  background-color: $greenBgColor;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  .twoColumnLayout {
+    flex-direction: row-reverse;
+    h2,
+    p {
+      color: $whiteColor;
+    }
+  }
+}
+
+// --benefitsSection--
+.homePage .benefitsSection {
+  padding: 6rem;
+  position: sticky;
+  top: 0;
+  .heading {
+    text-align: center;
+    font-family: $BebasFamily;
+    font-size: $extraLargeFont;
+    line-height: $extraLargeFont;
+    span {
+      display: block;
+      font-family: $BebasFamily;
+    }
+  }
+
+  // --
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vw;
+    margin: 6rem 0;
+    @media (max-width: $large) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5vw;
+    }
+    @media (max-width: $small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      text-align: center;
+      width: min(300px, 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: auto;
+      img {
+        width: min(250px, 100%);
+        @media (max-width: $small) {
+          width: min(200px, 100%);
+        }
+      }
+      .info {
+        padding-top: 13%;
+        h3 {
+          font-size: calc($mediumFont + 10px);
+          font-family: $RajdhaniFamily;
+          font-weight: 500;
+        }
+        p {
+          font-size: $normalFont;
+          font-family: $RajdhaniFamily;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// ---responsive---
